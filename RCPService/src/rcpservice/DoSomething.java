@@ -1,0 +1,51 @@
+package rcpservice;
+
+import java.util.Date;
+
+public class DoSomething {
+	
+    private String summary = "";
+    private String description = "";
+    private boolean done = false;
+    private Date dueDate = new Date();
+	
+	public String getSummary() {
+		return summary;
+	}
+
+	public void setSummary(String summary) {
+		this.summary = summary;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public boolean isDone() {
+		return done;
+	}
+
+	public void setDone(boolean done) {
+		this.done = done;
+	}
+
+	public Date getDueDate() {
+	    return new Date(dueDate.getTime());
+	}
+
+	public void setDueDate(Date dueDate) {
+	    this.dueDate = new Date(dueDate.getTime());
+	}
+
+	
+	public void printOutput() {
+		System.out.println("You just clicked the button ! Hurra !");	
+	} 
+	
+
+
+}
